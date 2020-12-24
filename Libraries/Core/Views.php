@@ -8,8 +8,9 @@ class Views
         if ($controller == "Home") {
             $view = VIEWS . $view . ".php";
         } else {
-            $view = VIEWS . $controller . "/" . $view . ".php";
+            $view = VIEWS . strtolower($controller) . "/" . $view . ".php";
         }
+        // echo $view;
         require_once($view);
     }
 }

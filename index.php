@@ -4,8 +4,8 @@ require_once("Helpers/Helpers.php");
 
 $url = !empty($_GET["url"]) ? $_GET["url"] : "home/home";
 $arrUrl = explode("/", $url);
-// $controller = $arrUrl[0];
-$controller = ucfirst($arrUrl[0]);
+$controller = $arrUrl[0];
+// $controller = ucfirst($arrUrl[0]);
 $method = $arrUrl[0];
 $params = "";
 if (!empty($arrUrl[1])) {

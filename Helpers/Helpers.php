@@ -3,6 +3,21 @@ function base_url()
 {
     return BASE_URL;
 }
+function media()
+{
+    return BASE_URL."assets/";
+}
+function headerAdmin($data="")
+{
+    $view_header = "Views/template/header_admin.php";
+    require_once($view_header);
+}
+function footerAdmin($data="")
+{
+    $view_footer = "Views/template/footer_admin.php";
+    require_once($view_footer);
+}
+
 function dep($data)
 {
     $format = print_r("<pre>");
